@@ -1,0 +1,12 @@
+{% extends "weather_app/base.html" %}
+
+{% block content %}
+<h2>Lista de ciudades</h2>
+<ul>
+    {% for city in cities %}
+        <li>{{ city.name }} ({{ city.country }})</li>
+    {% empty %}
+        <li>No se han añadido las ciudades aún</li>
+    {% endfor %}
+</ul>
+{% endblock %}

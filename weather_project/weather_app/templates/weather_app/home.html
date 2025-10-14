@@ -1,0 +1,7 @@
+{% extends "weather_app/base.html" %}
+
+{% block content %}
+<h2>Bienvenido a Weather Project</h2>
+
+<p>No encuentras tu ciudad? <a href="{% url 'weather_app:add_city' %}">Agrégala aquí</a></p>
+{% endblock %}

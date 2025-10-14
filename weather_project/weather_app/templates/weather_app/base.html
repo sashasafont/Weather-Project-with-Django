@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+  </head>
+  <body>
+    <h1>🌤 Weather Project</h1>
+    <nav>
+      <a href="{%url 'weather_app:home' %}">Principal</a> |
+      <a href="{% url 'weather_app:city_list' %}">Ciudades</a> |
+      <a href="{% url 'weather_app:weather_list' %}">Datos del tiempo</a>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

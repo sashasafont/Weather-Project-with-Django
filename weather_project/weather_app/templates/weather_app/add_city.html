@@ -1,0 +1,10 @@
+{% extends "weather_app/base.html" %}
+
+{% block content %}
+<h2>No encuentras tu ciudad?</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Agregar ciudad/pueblo</button>
+</form>
+{% endblock %}
