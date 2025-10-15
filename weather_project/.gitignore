@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Archivos de configuración local
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación
+*.mo
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Archivos de caché Django
+*.pid
+*.seed
+*.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Archivos de backups
+backups/
